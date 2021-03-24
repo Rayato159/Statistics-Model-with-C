@@ -33,11 +33,6 @@ float predict(float a, float b, float x){
     return ((a*x) + b);
 }
 
-float score(){
-    float r_square;
-    return r_square;
-}
-
 int main(){
     int n = 0, i;
     printf("input_n : ");
@@ -68,6 +63,12 @@ int main(){
     b = ((n*sum_XY)-(sum_x*sum_y))/((n*sum_square_x)-(pow(sum_x, 2)));
 
     printf("Your model : y_hat = %.4fx + %.4f", a, b);
+
+    float predict_x;
+
+    printf("\n\nLet's predict!!!\n input_x : ");
+    scanf("%f", &predict_x);
+    printf("result : %.4f", predict(a, b, predict_x));
 
     return 0;
 }
