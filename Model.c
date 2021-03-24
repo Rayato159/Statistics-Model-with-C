@@ -16,7 +16,7 @@ float sum(float *x, int index){
     return sum;
 }
 
-float sum_squaredd(float *x, int index){
+float sum_squared(float *x, int index){
     float sum= 0;
     int i;
     for(i=0; i<index; i++){
@@ -79,7 +79,7 @@ int main(){
 
     float sum_x = sum(x, n), sum_y = sum(y, n);
     float sum_XY = sum_xy(x, y, n);
-    float sum_squared_x = sum_squaredd(x, n);
+    float sum_squared_x = sum_squared(x, n);
     float a = 0.0000, b = 0.0000;
 
     struct Linear_Regression Model;
