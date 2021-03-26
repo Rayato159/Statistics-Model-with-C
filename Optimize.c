@@ -112,7 +112,7 @@ int main(){
     //Let's Optimize with Gradient Descent
     printf("Optimize!!!\n");
 
-    float old = 0.0, new = 0.0, step = 0.0 ,factor = 0.1;
+    float old = 0.0, new = 0.0, step = 0.0 ,factor = 0.01;
     float result = 0.0;
 
     do{
