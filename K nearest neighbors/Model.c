@@ -6,7 +6,7 @@ float pol(float x1, float x2, float y1, float y2){
     return sqrt(pow(x1-x2, 2) + pow(y1-y2, 2));
 }
 
-float minimum(float *min, float *A, int index, int *index_data){
+void minimum(float *min, float *A, int index, int *index_data){
     *min = A[0];
     int i, index_r = 0;
     for(i=1; i<index; i++){
