@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 double func(double x){
-    return sin(x);
+    return 2*x;
 }
 
 double derivative(double (*f)(double), double x){

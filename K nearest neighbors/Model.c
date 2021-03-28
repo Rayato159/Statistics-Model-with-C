@@ -19,9 +19,9 @@ float minimum(float *min, float *A, int index, int *index_data){
 }
 
 int main(){
-    float data[6][2] = {{40, 150}, {50, 130}, {50,170}, {60,160}, {70,140}, {70,180}};
-    char *A[6] = {"Normal", "Fat", "Normal", "Fat", "Fat", "Normal"};
-    float target[1][2] = {{39, 165}};
+    float data[6][2] = {{1.4, 0.2}, {1.4, 0.2}, {1.3,0.2}, {4.7,1.4}, {4.5,1.5}, {4.9,1.5}};
+    char *A[6] = {"Setosa", "Setosa", "Setosa", "Versicolor", "Versicolor", "Versicolor"};
+    float target[1][2] = {{4.8, 1.4}};
     int size = sizeof(data)/sizeof(data[0]);
 
     float *r = (float*)malloc(size*sizeof(float)); 
